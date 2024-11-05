@@ -13,7 +13,7 @@ class TestMathGame(unittest.TestCase):
     def test_random_operator(self):
         # TODO
         for _ in range(10):
-             random_op=random_operator
+             random_op=random_operator()
              self.assertIn(random_op,['+','-','*'])
         
 
