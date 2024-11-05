@@ -1,5 +1,5 @@
 import unittest
-from math_quiz import random_number, random_operator, create_function
+from math_quiz.math_quiz import random_number, random_operator, create_function
 class TestMathGame(unittest.TestCase):
 
     def test_random_number(self):

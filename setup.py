@@ -6,4 +6,10 @@ setup(
     description='Game to learn math',  # Füge eine Beschreibung hinzu
     packages=find_packages(),
     install_requires=[],  # Füge benötigte Pakete hinzu, falls vorhanden
+
+    entry_points={
+        'console_scripts': [
+            'quizz = src.main:main'
+        ]
+    }
 )
