@@ -9,7 +9,7 @@ setup(
 
     entry_points={
         'console_scripts': [
-            'quizz = src.main:main'
+            'quizz = math_quiz.main:main'
         ]
     }
 )
