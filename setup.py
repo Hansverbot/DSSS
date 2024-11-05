@@ -7,9 +7,4 @@ setup(
     packages=find_packages(),
     install_requires=[],  # Füge benötigte Pakete hinzu, falls vorhanden
 
-    entry_points={
-        'console_scripts': [
-            'quizz = math_quiz.main:main'
-        ]
-    }
 )
