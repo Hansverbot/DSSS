@@ -2,9 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name='math_quiz',
-    version='1.0',  # Passe die Versionsnummer an
-    description='Game to learn math',  # Füge eine Beschreibung hinzu
+    version='1.0',  
+    description='Game to learn math',  
     packages=find_packages(),
-    install_requires=[],  # Füge benötigte Pakete hinzu, falls vorhanden
-
+    install_requires=[],  
 )
