@@ -1,5 +1,5 @@
 import unittest
-from math_quiz.math_quiz import random_number, random_operator, create_function
+from math_quiz import random_number, random_operator, create_function
 class TestMathGame(unittest.TestCase):
 
     def test_random_number(self):
@@ -8,13 +8,13 @@ class TestMathGame(unittest.TestCase):
         max_val = 10
         for _ in range(1000):  # Test a large number of random values
             rand_num = random_number(min_val, max_val)
-            self.assertTrue(min_val <= rand_num <= max_val)
+            self.assertTrue(min_val <= rand_num <= max_val) #check if the number is in between the min and max value
 
     def test_random_operator(self):
         # TODO
         for _ in range(10):
              random_op=random_operator()
-             self.assertIn(random_op,['+','-','*'])
+             self.assertIn(random_op,['+','-','*']) #check if the generated operator is in the list
         
 
     def test_create_function(self):
@@ -24,10 +24,10 @@ class TestMathGame(unittest.TestCase):
             
 
             for num1, num2, operator, expected_problem, expected_answer in test_cases:
-                predicted_problem, predicted_answer=create_function(num1,num2,operator)
-                self.assertEqual(predicted_problem,expected_problem)
-                self.assertEqual(predicted_answer,expected_answer)
-                # TODO
+                predicted_problem, predicted_answer=create_function(num1,num2,operator) #calculates the predicted answer and problem 
+                self.assertEqual(predicted_problem,expected_problem) #compares them to the solution
+                self.assertEqual(predicted_answer,expected_answer)  #compares them to the solution
+                
               
 
 if __name__ == "__main__":

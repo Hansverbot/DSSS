@@ -3,7 +3,7 @@ import keyboard
 
 
 def random_number(min, max):
-
+    
     """
     This function returns  a random number
 
@@ -45,24 +45,24 @@ def create_function(n1, n2, o):
     return: Returns p the function as a string and also gives back the answer in a number a.
     """
     p = f"{n1} {o} {n2}"
-    if o == '+':
+    if o == '+': #addition
         a = n1 + n2
-    elif o == '-':
+    elif o == '-': #substraction
         a = n1 - n2
     else:
-        a = n1 * n2
+        a = n1 * n2 #multiplication
     return p, a
 
 def math_quiz():
-    points = 0
+    points = 0 #how many answers were right
     numberOfTries=3
 
     print("Welcome to the Math Quiz Game!")
     print("You will be presented with math problems, and you need to provide the correct answers.")
 
     for _ in range(numberOfTries):
-        n1 = random_number(1, 10);
-        n2 = random_number(1, 5);
+        n1 = random_number(1, 10);  #creates a number between 1 and 10
+        n2 = random_number(1, 5);   #creates a number between 1 and 5
         o = random_operator()
 
         PROBLEM, ANSWER = create_function(n1, n2, o)
